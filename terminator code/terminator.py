@@ -6,7 +6,7 @@ os.system("taskkill /f /im PhoneExperienceHost.exe") #who uses phone link?
 os.system("taskkill /f /im CompatTelRunner.exe") #no good use and might hog your drive if you're using an hdd
 os.system("taskkill /f /im smartscreen.exe") #if you're reading this then you are smart enough to not need smartscreen
 #os.system("net stop wuauserv")
-#^ helf until further notice
+#^ held until further notice
 
 
 print("=========================================================================")
