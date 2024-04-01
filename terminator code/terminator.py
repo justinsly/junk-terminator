@@ -1,4 +1,7 @@
 import os
+import random
+
+tips = ["cool tip: its recommended to periodically run this program every time", "cool tip: you can contribute to the program on https://github.com/justinsly/junk-terminator", "cool tip: you can", "cool tip: give me all your money (pls)"]
 
 print("getting rid of junk processes...")
 
@@ -12,7 +15,9 @@ os.system("taskkill /f /im TiWorker.exe") #the process doesnt seem to do anythin
 #os.system("net stop SysMain")
 #^ held until further notice
 
-print("=========================================================================")
+print(" ")
+print("-------------------------------------------------------------------------------")
+print(" ")
 
 killff = input("press y then enter to close all open and background firefox tasks, press anything else to keep: ")
 
@@ -24,4 +29,7 @@ if killff == "y":
 #if killspool == "y":
     #os.system("taskkill /f /im spoolsv.exe")
 #^ held until further notice
-input("Finished. Press Enter to quit")
+print(" ")
+print("Finished. Press Enter to quit")
+print(" ")
+input(random.choice(tips))
