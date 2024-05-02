@@ -15,14 +15,11 @@ os.system("taskkill /f /im TiWorker.exe") #the process doesnt seem to do anythin
 #os.system("net stop SysMain")
 #^ held until further notice
 
+
 print(" ")
 print("-------------------------------------------------------------------------------")
 print(" ")
 
-killff = input("press y then enter to close all open and background firefox tasks, press anything else to keep: ")
-
-if killff == "y":
-    os.system("taskkill /f /im  firefox.exe")
 
 #killspool = input("press y to close spooler subsystem app (used to print stuff), press any other key to keep: ")
 
