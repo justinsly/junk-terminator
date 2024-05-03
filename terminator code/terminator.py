@@ -1,5 +1,6 @@
 import os
 import random
+import subprocess
 
 tips = ["cool tip: its recommended to periodically run this program every time", "cool tip: you can contribute to the program on https://github.com/justinsly/junk-terminator", "cool tip: you can", "cool tip: give me all your money (pls)"]
 
@@ -9,10 +10,15 @@ os.system("taskkill /f /im PhoneExperienceHost.exe") #who uses phone link?
 os.system("taskkill /f /im CompatTelRunner.exe") #no good use and might hog your drive if you're using an hdd
 os.system("taskkill /f /im smartscreen.exe") #if you're reading this then you are smart enough to not need smartscreen
 os.system("taskkill /f /im TiWorker.exe") #the process doesnt seem to do anything useful
+try:
+    subprocess.check_call("net stop wuauserv", stderr=subprocess.DEVNULL)
+except subprocess.CalledProcessError:
+    print("failed to close windows update service")
 
-os.system("net stop wuauserv")
-os.system("net stop SysMain")
-#^ spits out big errors when they fail, need to figure out how to suppress that and replace it with shorter errors
+try:
+    subprocess.check_call("net stop SysMain", stderr=subprocess.DEVNULL)
+except subprocess.CalledProcessError:
+    print("failed to close sysmain")
 
 
 print(" ")
