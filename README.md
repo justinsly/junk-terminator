@@ -2,6 +2,7 @@
 
  Tries to close background processes that might affect your performance.
 Originally made as a personal project for my own benefits
+
 ## The termination
 Junk terminator will try to close useless background tasks such as background Phone Link processes, Microsoft Compatibality Telemary, and more to come.
 
