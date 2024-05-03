@@ -1,4 +1,5 @@
-# JUNK TERMINATOR
+![junk terminator](pictures/title.png)
+
  Tries to close background processes that might affect your performance.
 Originally made as a personal project for my own benefits
 ## The termination
