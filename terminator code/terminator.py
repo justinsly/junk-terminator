@@ -2,6 +2,8 @@ import os
 import random
 import subprocess
 
+os.system("title Junk Terminator")
+
 tips = ["cool tip: its recommended to periodically run this program every time", "cool tip: you can contribute to the program on https://github.com/justinsly/junk-terminator", "cool tip: you can", "cool tip: give me all your money (pls)"]
 
 print("getting rid of junk processes...")
@@ -26,7 +28,7 @@ print("-------------------------------------------------------------------------
 print(" ")
 
 
-killspool = input("press y to close spooler subsystem app (used to print stuff), press any other key to keep: ")
+killspool = input("press y to close spooler subsystem app (used for printers), press any other key to keep: ")
 
 if killspool == "y":
     os.system("taskkill /f /im spoolsv.exe")
