@@ -12,6 +12,7 @@ os.system("taskkill /f /im PhoneExperienceHost.exe") #who uses phone link?
 os.system("taskkill /f /im CompatTelRunner.exe") #no good use and might hog your drive if you're using an hdd
 os.system("taskkill /f /im smartscreen.exe") #if you're reading this then you are smart enough to not need smartscreen
 os.system("taskkill /f /im TiWorker.exe") #the process doesnt seem to do anything useful
+os.system("taskkill /f /im HxTsr.exe") #outlook
 try:
     subprocess.check_call("net stop wuauserv", stderr=subprocess.DEVNULL)
 except subprocess.CalledProcessError:
@@ -20,7 +21,7 @@ except subprocess.CalledProcessError:
 try:
     subprocess.check_call("net stop SysMain", stderr=subprocess.DEVNULL)
 except subprocess.CalledProcessError:
-    print("failed to close sysmain")
+    print("failed to close sysmain service")
 
 
 print(" ")
