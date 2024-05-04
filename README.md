@@ -1,6 +1,10 @@
 ![junk terminator](pictures/extratitle.png)
 
- Tries to close background processes that might affect your performance.
+### note
+this version of JT is planned to contain more features. for a more lightweight version, check out the [main branch of the project](https://github.com/justinsly/junk-terminator/tree/main)
+
+# description
+Tries to close background processes that might affect your performance.
 Originally made as a personal project for my own benefits
 
 # required stuff
