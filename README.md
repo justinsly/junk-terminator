@@ -14,8 +14,9 @@ the whole thing is made up out of a .py file, so you need to have python install
 # The termination
 Junk terminator will try to close useless background tasks such as background Phone Link processes, Microsoft Compatibality Telemary, and more to come.
 
+## Usage
+literally just run the .bat file
 
 
 ### TO-DO:
-- figure out how to make the code run as administrator (kinda getting there???)
 - add more junk and optional processes to terminate

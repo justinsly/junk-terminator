@@ -2,6 +2,8 @@ import os
 import random
 import subprocess
 
+print("preparing...")
+
 os.system("title Junk Terminator")
 
 tips = ["cool tip: its recommended to periodically run this program every time", "cool tip: you can contribute to the program on https://github.com/justinsly/junk-terminator", "cool tip: you can", "cool tip: give me all your money (pls)"]
@@ -13,6 +15,9 @@ os.system("taskkill /f /im CompatTelRunner.exe") #no good use and might hog your
 os.system("taskkill /f /im smartscreen.exe") #if you're reading this then you are smart enough to not need smartscreen
 os.system("taskkill /f /im TiWorker.exe") #the process doesnt seem to do anything useful
 os.system("taskkill /f /im HxTsr.exe") #outlook
+
+print("")
+
 try:
     subprocess.check_call("net stop wuauserv", stderr=subprocess.DEVNULL)
 except subprocess.CalledProcessError:
