@@ -1,7 +1,7 @@
 ![junk terminator](pictures/extratitle.png)
 
 ### note
-this version of JT is planned to contain more features. for a more lightweight version, check out the [main branch of the project](https://github.com/justinsly/junk-terminator/tree/main)
+~~this version of JT is planned to contain more features. for a more lightweight version, check out the [main branch of the project](https://github.com/justinsly/junk-terminator/tree/main)~~ this thing is broken and it sucks dont use this, use the lightweight main version instead
 
 # description
 Tries to close background processes that might affect your performance.
