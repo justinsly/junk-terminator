@@ -4,7 +4,7 @@ import subprocess
 
 os.system("title Junk Terminator")
 
-tips = ["cool tip: its recommended to periodically run this program every time", "cool tip: you can contribute to the program on https://github.com/justinsly/junk-terminator", "cool tip: you can", "cool tip: give me all your money (pls)"]
+tips = ["cool tip: its recommended to periodically run this program every time", "cool tip: you can", "cool tip: give me all your money (pls)"]
 
 print("getting rid of junk processes...")
 
