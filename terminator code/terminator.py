@@ -13,6 +13,12 @@ os.system("taskkill /f /im CompatTelRunner.exe") #no good use and might hog your
 os.system("taskkill /f /im smartscreen.exe") #if you're reading this then you are smart enough to not need smartscreen
 os.system("taskkill /f /im TiWorker.exe") #the process doesnt seem to do anything useful
 os.system("taskkill /f /im HxTsr.exe") #outlook
+os.system("taskkill /f /im MoUsoCoreWorker.exe") #seems to be slightly related to windows update?
+
+print(" ")
+print("-------------------------------------------------------------------------------")
+print("closing services...")
+
 try:
     subprocess.check_call("net stop wuauserv", stderr=subprocess.DEVNULL)
 except subprocess.CalledProcessError:
@@ -30,10 +36,14 @@ print(" ")
 
 
 killspool = input("press y to close spooler subsystem app (used for printers), press any other key to keep: ")
-
 if killspool == "y":
     os.system("taskkill /f /im spoolsv.exe")
 
+print(" ")
+
+killsearch = input("close windows search indexer? (can gather up to 12mb of ram, but uses up the disk when restarting after being terminated): ")
+if killsearch == "y":
+    os.system("taskkill /f /im SearchIndexer.exe")
 
 print(" ")
 print("Finished. Press Enter to quit")
