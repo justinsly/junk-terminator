@@ -13,5 +13,5 @@ Junk terminator will try to close useless background tasks such as background Ph
 
 
 ### TO-DO:
-- figure out how to make the code run as administrator (kinda getting there???)
-- add more junk and optional processes to terminate
+- [x] ~~figure out how to make the code run as administrator~~
+- [ ] add more junk and optional processes to terminate
